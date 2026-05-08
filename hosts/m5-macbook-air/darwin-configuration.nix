@@ -44,6 +44,7 @@
       "microsoft-teams"
       "obsidian"
       "openscad@snapshot"
+      "orcaslicer"
       "slack"
       "visual-studio-code"
       "voicevox"
