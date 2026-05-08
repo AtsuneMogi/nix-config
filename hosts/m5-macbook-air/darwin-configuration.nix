@@ -32,6 +32,7 @@
     casks = [
       "adobe-acrobat-reader"
       "antigravity"
+      "bambu-studio"
       "cmux"
       "copilot-cli"
       "discord"
