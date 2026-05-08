@@ -18,16 +18,16 @@ nix-config/
 │   ├── cmd-eikana.nix
 │   └── dotfiles.nix
 └── dotfiles/
-	├── .editorconfig
-	├── .latexmkrc
-	├── .tmux.conf
-	├── .vimrc
-	├── .zshrc
-	└── .config/
-		├── cmux/
-		│	└── settings.json
-		└── nvim/
-			└── init.vim
+    ├── .editorconfig
+    ├── .latexmkrc
+    ├── .tmux.conf
+    ├── .vimrc
+    ├── .zshrc
+    └── .config/
+        ├── cmux/
+        │   └── settings.json
+        └── nvim/
+            └── init.vim
 ```
 
 ## Install
