@@ -41,6 +41,7 @@
       "google-chrome"
       "google-drive"
       "google-gemini"
+      "hiddify-app"
       "microsoft-office"
       "microsoft-teams"
       "obsidian"
