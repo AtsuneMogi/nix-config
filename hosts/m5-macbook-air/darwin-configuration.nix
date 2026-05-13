@@ -27,6 +27,7 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     taps = [
+      "hiddify/hiddify"
       "VOICEVOX/voicevox"
     ];
     casks = [
