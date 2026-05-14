@@ -4,7 +4,6 @@
     ../../modules/dotfiles.nix
   ];
 
-  home.username = "debian";
   home.homeDirectory = "/home/maomudunyin";
   home.username = "maomudunyin";
 
