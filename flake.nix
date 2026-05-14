@@ -50,7 +50,7 @@
     # Debian/Linux Configurations (Home Manager only)
     # ============================================================
     homeConfigurations.google-vm-instance-0 = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.armv7l-linux;
+      pkgs = nixpkgs.legacyPackages.x86_64-linux;
       modules = [
         ./hosts/google-vm-instance-0/home.nix
         {
