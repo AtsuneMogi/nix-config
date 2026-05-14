@@ -47,5 +47,8 @@ Then clone this repository and apply the configuration with a nix command:
 git clone https://github.com/AtsuneMogi/nix-config
 cd nix-config
 # apply nix-darwin configuration
-sudo nix run nix-darwin -- switch --flake .#atsune
+# nix-darwin
+sudo nix run nix-darwin -- switch --flake .#[device-name]
+# home-manager
+sudo nix run home-manager -- switch --flake .#[device-name]
 ```
