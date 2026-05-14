@@ -49,13 +49,13 @@
     # ============================================================
     # Debian/Linux Configurations (Home Manager only)
     # ============================================================
-    homeConfigurations.beaglebone-green = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.google-vm-instance-0 = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.armv7l-linux;
       modules = [
-        ./hosts/beaglebone-green/home.nix
+        ./hosts/google-vm-instance-0/home.nix
         {
-          home.username = "debian";
-          home.homeDirectory = "/home/debian";
+          home.username = "maomudunyin";
+          home.homeDirectory = "/home/maomudunyin";
         }
       ];
     };
