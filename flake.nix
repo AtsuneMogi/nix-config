@@ -8,64 +8,56 @@
   };
 
   outputs = { self, nixpkgs, darwin, home-manager, ... }:
-  let
-    # Helper function for Darwin (macOS) configurations
-    mkDarwinConfig = { system, hostPath, username, homeDirectory }:
-      darwin.lib.darwinSystem {
-        inherit system;
-        modules = [
-          "${hostPath}/darwin-configuration.nix"
-
-          home-manager.darwinModules.home-manager {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.${username} = { pkgs, ... }: {
-              imports = [ "${hostPath}/home.nix" ];
-              home.homeDirectory = pkgs.lib.mkForce homeDirectory;
-              home.username = pkgs.lib.mkForce username;
-            };
-          }
-        ];
-      };
-
-    # Helper function for Debian/Linux configurations (Home Manager only)
-    mkLinuxConfig = { system, hostPath, username, homeDirectory }:
-      home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        modules = [
-          "${hostPath}/home.nix"
-          {
-            home.username = username;
-            home.homeDirectory = homeDirectory;
-          }
-        ];
-      };
-  in {
+  {
     # ============================================================
     # macOS (Darwin) Configurations
     # ============================================================
-    darwinConfigurations.m1-macbook-air = mkDarwinConfig {
+    darwinConfigurations.m1-macbook-air = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
-      hostPath = ./hosts/m1-macbook-air;
-      username = "atsune";
-      homeDirectory = "/Users/atsune";
+      modules = [
+        ./hosts/m1-macbook-air/darwin-configuration.nix
+
+        home-manager.darwinModules.home-manager {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.atsune = { pkgs, ... }: {
+            imports = [ ./hosts/m1-macbook-air/home.nix ];
+            home.homeDirectory = pkgs.lib.mkForce "/Users/atsune";
+            home.username = pkgs.lib.mkForce "atsune";
+          };
+        }
+      ];
     };
 
-    darwinConfigurations.m5-macbook-air = mkDarwinConfig {
+    darwinConfigurations.m5-macbook-air = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
-      hostPath = ./hosts/m5-macbook-air;
-      username = "atsune";
-      homeDirectory = "/Users/atsune";
+      modules = [
+        ./hosts/m5-macbook-air/darwin-configuration.nix
+
+        home-manager.darwinModules.home-manager {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.atsune = { pkgs, ... }: {
+            imports = [ ./hosts/m5-macbook-air/home.nix ];
+            home.homeDirectory = pkgs.lib.mkForce "/Users/atsune";
+            home.username = pkgs.lib.mkForce "atsune";
+          };
+        }
+      ];
     };
 
     # ============================================================
     # Debian/Linux Configurations (Home Manager only)
     # ============================================================
-    homeConfigurations.beaglebone-green = mkLinuxConfig {
-      system = "armv7l-linux";
-      hostPath = ./hosts/beaglebone-green;
-      username = "debian";
-      homeDirectory = "/home/debian";
+    homeConfigurations.beaglebone-green = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.armv7l-linux;
+      modules = [
+        ./hosts/beaglebone-green/home.nix
+        {
+          home.username = "debian";
+          home.homeDirectory = "/home/debian";
+        }
+      ];
     };
   };
 }
