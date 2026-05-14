@@ -50,5 +50,5 @@ cd nix-config
 # nix-darwin
 sudo nix run nix-darwin -- switch --flake .#[device-name]
 # home-manager
-sudo nix run home-manager -- switch --flake .#[device-name]
+nix run home-manager -- switch --flake .#[device-name]
 ```
