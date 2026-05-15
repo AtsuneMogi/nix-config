@@ -10,6 +10,7 @@
   home.packages = with pkgs; [
     fastfetch
     htop
+    starship
     vim
     zsh
   ];

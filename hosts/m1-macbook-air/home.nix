@@ -27,6 +27,7 @@ in {
     htop
     openssh
     ranger
+    starship
     wireshark-cli
     cmdEikanaPkg
   ];
