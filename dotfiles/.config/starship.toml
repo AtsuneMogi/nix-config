@@ -1,0 +1,47 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+# Plain Text Symbols preset (ASCII-only symbols)
+add_newline = true
+
+[character]
+success_symbol = '[>](bold green) '
+error_symbol = '[x](bold red) '
+vimcmd_symbol = '[<](bold green) '
+
+[directory]
+read_only = '(ro) '
+truncation_symbol = '...'
+
+[git_branch]
+symbol = 'branch: '
+
+[git_status]
+conflicted = 'CONFLICT'
+ahead = '^'
+behind = 'v'
+diverged = '<>'
+up_to_date = 'OK'
+untracked = '?'
+stashed = 'S'
+modified = '!'
+staged = '+'
+renamed = '->'
+deleted = 'x'
+
+[package]
+symbol = 'pkg '
+
+[time]
+format = '[$time]('
+
+[status]
+symbol = '[!]'
+
+[aws]
+symbol = 'aws '
+
+[nodejs]
+symbol = 'node '
+
+[python]
+symbol = 'py '
