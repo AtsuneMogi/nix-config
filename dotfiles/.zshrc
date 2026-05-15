@@ -18,12 +18,12 @@ export SAVEHIST=100000
 setopt hist_ignore_dups
 setopt EXTENDED_HISTORY
 # git
-autoload -Uz vcs_info
-precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '(%b)'
+#autoload -Uz vcs_info
+#precmd() { vcs_info }
+#zstyle ':vcs_info:git:*' formats '(%b)'
 # prompt
-setopt PROMPT_SUBST
-PROMPT=$'%B%F{green}%n@%m%B%F{white}:%B%F{blue}%~ %B%F{yellow}${vcs_info_msg_0_} \n%b%(?.%F{green}%#.%F{red}%#%f) %F{white}'
+#setopt PROMPT_SUBST
+#PROMPT=$'%B%F{green}%n@%m%B%F{white}:%B%F{blue}%~ %B%F{yellow}${vcs_info_msg_0_} \n%b%(?.%F{green}%#.%F{red}%#%f) %F{white}'
 ##### added by zinit's installer #####
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"

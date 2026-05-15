@@ -1,5 +1,8 @@
 # Starship configuration
 
+# Set palette
+palette = "tokyo-night"
+
 # Don't print a new line at the start of the prompt
 add_newline = false
 
@@ -8,19 +11,34 @@ format = """
 $username@$hostname $directory$git_branch$git_status
 $character """
 
+# Tokyo Night color palette
+[palettes.tokyo-night]
+foreground = "#c0caf5"
+background = "#1a1b26"
+black = "#15202b"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#a9b1d6"
+
 # Configure the character module
 [character]
-success_symbol = "[➜](bold green)"
+success_symbol = "[➜](bold blue)"
 error_symbol = "[✗](bold red)"
 
 # Configure the git_branch module
 [git_branch]
 format = "on [$symbol$branch]($style) "
 symbol = " "
+style = "bold cyan"
 
 # Configure the git_status module
 [git_status]
 format = "([$all_status$ahead_behind]($style) )"
+style = "bold red"
 conflicted = "🏳"
 ahead = "⇡${count}"
 behind = "⇣${count}"
@@ -37,13 +55,18 @@ deleted = "🗑"
 truncation_length = 3
 truncate_to_repo = true
 format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold blue"
+read_only = "🔒 "
+read_only_style = "bold red"
 
 # Configure the username module
 [username]
 show_always = true
 format = "[$user]($style)"
+style_user = "bold yellow"
 
 # Configure the hostname module
 [hostname]
 ssh_only = false
 format = "[$hostname]($style)"
+style = "bold green"
