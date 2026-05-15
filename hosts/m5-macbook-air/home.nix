@@ -18,7 +18,8 @@ in {
       collection-langjapanese
       collection-fontsrecommended
       latexmk
-      physics; # latex packages
+      # --- latex packages ---
+      lastpage
     })
 
     # --- CLI tools ---
