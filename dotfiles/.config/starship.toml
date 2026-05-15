@@ -61,9 +61,6 @@ symbol = 'rs '
 [java]
 symbol = 'java '
 
-[makefile]
-symbol = 'make '
-
 [html]
 symbol = 'html '
 
@@ -81,6 +78,3 @@ symbol = 'md '
 
 [nix_shell]
 symbol = 'nix '
-
-[shell]
-symbol = 'sh '
