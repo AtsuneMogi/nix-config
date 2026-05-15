@@ -19,6 +19,7 @@ in {
       collection-fontsrecommended
       latexmk
       # --- latex packages ---
+      hypernat
       lastpage;
     })
 
