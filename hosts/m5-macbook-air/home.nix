@@ -19,7 +19,7 @@ in {
       collection-fontsrecommended
       latexmk
       # --- latex packages ---
-      lastpage
+      lastpage;
     })
 
     # --- CLI tools ---
