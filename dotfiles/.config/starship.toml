@@ -61,18 +61,6 @@ symbol = 'rs '
 [java]
 symbol = 'java '
 
-[html]
-symbol = 'html '
-
-[css]
-symbol = 'css '
-
-[json]
-symbol = 'json '
-
-[yaml]
-symbol = 'yaml '
-
 [markdown]
 symbol = 'md '
 
