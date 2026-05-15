@@ -41,6 +41,7 @@
       "google-chrome"
       "google-drive"
       "google-gemini"
+      "font-jetbrains-mono-nerd-font"
       "microsoft-office"
       "microsoft-teams"
       "obs"
