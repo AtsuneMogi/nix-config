@@ -13,7 +13,6 @@
       source = ../dotfiles/.config/cmux;
       recursive = true;
     };
-    ".config/starship.toml".source = ../dotfiles/.config/starship.toml;
     # vim-plug for Vim
     ".vim/autoload/plug.vim" = {
       source = pkgs.fetchurl {
