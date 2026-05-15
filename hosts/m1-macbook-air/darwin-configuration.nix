@@ -43,6 +43,7 @@
       "google-gemini"
       "microsoft-office"
       "microsoft-teams"
+      "obs"
       "obsidian"
       "openscad@snapshot"
       "orcaslicer"
