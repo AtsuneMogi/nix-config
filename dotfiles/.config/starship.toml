@@ -61,8 +61,5 @@ symbol = 'rs '
 [java]
 symbol = 'java '
 
-[markdown]
-symbol = 'md '
-
 [nix_shell]
 symbol = 'nix '
