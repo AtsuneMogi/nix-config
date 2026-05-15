@@ -1,0 +1,49 @@
+# Starship configuration
+
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Set the format of the prompt
+format = """
+$username@$hostname $directory$git_branch$git_status
+$character """
+
+# Configure the character module
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+# Configure the git_branch module
+[git_branch]
+format = "on [$symbol$branch]($style) "
+symbol = " "
+
+# Configure the git_status module
+[git_status]
+format = "([$all_status$ahead_behind]($style) )"
+conflicted = "🏳"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+
+# Configure the directory module
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+# Configure the username module
+[username]
+show_always = true
+format = "[$user]($style)"
+
+# Configure the hostname module
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
