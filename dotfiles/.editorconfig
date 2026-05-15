@@ -30,6 +30,11 @@ indent_size = 2
 indent_style = space
 indent_size = 4
 
+# Java
+[*.java]
+indent_style = space
+indent_size = 4
+
 # JavaScript, TypeScript (including jsx and tsx for React)
 [*.{js,jsx,ts,tsx}]
 indent_style = space
