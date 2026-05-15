@@ -45,3 +45,42 @@ symbol = 'node '
 
 [python]
 symbol = 'py '
+
+[c]
+symbol = 'C '
+
+[cpp]
+symbol = 'C++ '
+
+[ruby]
+symbol = 'rb '
+
+[rust]
+symbol = 'rs '
+
+[java]
+symbol = 'java '
+
+[makefile]
+symbol = 'make '
+
+[html]
+symbol = 'html '
+
+[css]
+symbol = 'css '
+
+[json]
+symbol = 'json '
+
+[yaml]
+symbol = 'yaml '
+
+[markdown]
+symbol = 'md '
+
+[nix_shell]
+symbol = 'nix '
+
+[shell]
+symbol = 'sh '
