@@ -16,7 +16,7 @@
     ".config/starship.toml".source = ../dotfiles/.config/starship.toml;
     # VSCode settings and extensions
     "~/Library/Application Support/Code/User/settings.json".source = ../dotfiles/.vscode/settings.json;
-    ".vscode/extensions.json".source = ../dotfiles/.vscode/extensions.json;
+    ".vscode/extensions/extensions.json".source = ../dotfiles/.vscode/extensions.json;
     # vim-plug for Vim
     ".vim/autoload/plug.vim" = {
       source = pkgs.fetchurl {
