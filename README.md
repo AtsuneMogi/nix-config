@@ -30,7 +30,7 @@ nix-config/
     ├── .zshrc
     └── .config/
         ├── cmux/
-        │   └── settings.json
+        │   └── cmux.json
         ├── nvim/
         │   └── init.vim
         └── starship.toml
