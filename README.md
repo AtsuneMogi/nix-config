@@ -27,9 +27,6 @@ nix-config/
     ├── .latexmkrc
     ├── .tmux.conf
     ├── .vimrc
-    ├── .vscode/
-    │   ├── extensions.json
-    │   └── settings.json
     ├── .zshrc
     └── .config/
         ├── cmux/

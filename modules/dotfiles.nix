@@ -14,9 +14,7 @@
       recursive = true;
     };
     ".config/starship.toml".source = ../dotfiles/.config/starship.toml;
-    # VSCode settings and extensions
-      "Library/Application Support/Code/User/settings.json".source = ../dotfiles/.vscode/settings.json;
-      ".vscode/extensions/extensions.json".source = ../dotfiles/.vscode/extensions.json;
+    # (VSCode settings and extensions removed)
     # vim-plug for Vim
     ".vim/autoload/plug.vim" = {
       source = pkgs.fetchurl {
