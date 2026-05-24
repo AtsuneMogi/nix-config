@@ -18,6 +18,8 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 setopt hist_ignore_dups
 setopt EXTENDED_HISTORY
+# change the output directory for zcompdump from home directory
+export ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$SHORT_HOST-$ZSH_VERSION"
 # starship
 eval "$(starship init zsh)"
 ##### added by zinit's installer #####
