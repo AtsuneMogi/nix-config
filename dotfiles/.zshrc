@@ -38,12 +38,12 @@ zinit light zdharma/fast-syntax-highlighting
 zinit ice depth=1
 zinit light jeffreytse/zsh-vi-mode
 
-# starship
+# starship 
 if (( $+commands[starship] )); then
   eval "$(starship init zsh)"
 fi
 
-# Nix and Homebrew environment setups
+# (darwin) Nix and Homebrew environment setups
 if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
   . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 fi
