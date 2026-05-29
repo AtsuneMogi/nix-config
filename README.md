@@ -10,6 +10,18 @@ nix-config/
 ├── flake.lock
 ├── .gitignore
 ├── README.md
+├── dotfiles/
+│   ├── .config/
+│   │   ├── cmux/
+│   │   │   └── cmux.json
+│   │   ├── nvim/
+│   │   │   └── init.vim
+│   │   └── starship.toml
+│   ├── .editorconfig
+│   ├── .latexmkrc
+│   ├── .tmux.conf
+│   ├── .vimrc
+│   └── .zshrc
 ├── hosts/
 │   ├── google-vm-instance-0/
 │   │   └── home.nix
@@ -19,21 +31,9 @@ nix-config/
 │   └── m5-macbook-air/
 │       ├── darwin-configuration.nix
 │       └── home.nix
-├── modules/
-│   ├── cmd-eikana.nix
-│   └── dotfiles.nix
-└── dotfiles/
-    ├── .editorconfig
-    ├── .latexmkrc
-    ├── .tmux.conf
-    ├── .vimrc
-    ├── .zshrc
-    └── .config/
-        ├── cmux/
-        │   └── cmux.json
-        ├── nvim/
-        │   └── init.vim
-        └── starship.toml
+└── modules/
+    ├── cmd-eikana.nix
+    └── dotfiles.nix
 ```
 
 ## Install
