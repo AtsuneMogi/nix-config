@@ -40,7 +40,6 @@
       "gimp"
       "google-chrome"
       "google-drive"
-      "font-jetbrains-mono-nerd-font"
       "microsoft-office"
       "microsoft-teams"
       "obsidian"
