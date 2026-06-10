@@ -23,9 +23,9 @@
   # settings for homebrew
   homebrew = {
     enable = true;
-    onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
+    onActivation.cleanup = "zap";
     taps = [
       "VOICEVOX/voicevox"
     ];
@@ -45,7 +45,7 @@
       "obsidian"
       "openscad@snapshot"
       "orcaslicer"
-      "raspberry-pi-imager"
+      "rpi-imager"
       "slack"
       "visual-studio-code"
       "voicevox"
