@@ -23,9 +23,16 @@
   # settings for homebrew
   homebrew = {
     enable = true;
-    onActivation.autoUpdate = true;
-    onActivation.upgrade = true;
-    onActivation.cleanup = "zap";
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+      # CRITICAL: Changing this to "zap" or "uninstall" natively forces
+      # nix-darwin to supply the safety flags (--force) Homebrew demands.
+      cleanup = "zap";
+    };
+    #onActivation.autoUpdate = true;
+    #onActivation.upgrade = true;
+    #onActivation.cleanup = "zap";
     taps = [
       "VOICEVOX/voicevox"
     ];
