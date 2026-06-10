@@ -45,7 +45,7 @@
       "obsidian"
       "openscad@snapshot"
       "orcaslicer"
-      "rpi-imager"
+      "raspberry-pi-imager"
       "slack"
       "visual-studio-code"
       "voicevox"
