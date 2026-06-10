@@ -32,10 +32,6 @@
       cleanup = "none";
     };
 
-    # This forces nix-darwin to explicitly append the safety flags
-    # directly to the 'brew bundle' command call
-    extraFlags = [ "--force" ];
-    
     taps = [
       "VOICEVOX/voicevox"
     ];
