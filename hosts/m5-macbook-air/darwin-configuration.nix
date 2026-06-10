@@ -28,16 +28,14 @@
       upgrade = true;
       # CRITICAL: Changing this to "zap" or "uninstall" natively forces
       # nix-darwin to supply the safety flags (--force) Homebrew demands.
-      cleanup = "zap";
+      #cleanup = "zap";
+      cleanup = "none";
     };
 
     # This forces nix-darwin to explicitly append the safety flags
     # directly to the 'brew bundle' command call
     extraFlags = [ "--force" ];
     
-    #onActivation.autoUpdate = true;
-    #onActivation.upgrade = true;
-    #onActivation.cleanup = "zap";
     taps = [
       "VOICEVOX/voicevox"
     ];
