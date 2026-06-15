@@ -26,9 +26,6 @@
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
-    taps = [
-      "VOICEVOX/voicevox"
-    ];
     casks = [
       "adobe-acrobat-reader"
       "antigravity"
@@ -48,7 +45,6 @@
       "orcaslicer"
       "slack"
       "visual-studio-code"
-      "voicevox"
       "zoom"
     ];
   };

@@ -32,9 +32,6 @@
       cleanup = "none";
     };
 
-    taps = [
-      "VOICEVOX/voicevox"
-    ];
     casks = [
       "adobe-acrobat-reader"
       "antigravity"
@@ -54,7 +51,6 @@
       "raspberry-pi-imager"
       "slack"
       "visual-studio-code"
-      "voicevox"
       "zoom"
     ];
   };
