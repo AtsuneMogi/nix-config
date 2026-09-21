@@ -37,6 +37,7 @@
     casks = [
       "adobe-acrobat-reader"
       "antigravity"
+      "anythingllm"
       "bambu-studio"
       "brave-browser"
       "cmux"
