@@ -48,6 +48,7 @@
       "gimp"
       "google-chrome"
       "google-drive"
+      "google-japanese-ime"
       "lm-studio"
       "microsoft-office"
       "microsoft-teams"
