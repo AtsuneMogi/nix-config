@@ -2,11 +2,11 @@
 
 pkgs.stdenv.mkDerivation {
   pname = "cmd-eikana";
-  version = "2.4.2";
+  version = "2.6.0";
 
   src = pkgs.fetchurl {
-    url = "https://github.com/dominion525/cmd-eikana/releases/download/v2.4.2/cmd-eikana-v2.4.2-arm64.zip";
-    hash = "sha256-Mwc5aIrO7YlA1r79brKipAznOotuOk12UnHWKZhbRiM=";
+    url = "https://github.com/dominion525/cmd-eikana/releases/download/v2.6.0/cmd-eikana-v2.6.0-arm64.zip";
+    hash = "sha256-SdVQPKtNAdZ69v8T+WPU/6cS0wOJPUWemOuUaTMePEo=";
   };
 
   dontUnpack = true;
