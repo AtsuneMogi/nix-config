@@ -23,8 +23,6 @@ nix-config/
 │   ├── .vimrc
 │   └── .zshrc
 ├── hosts/
-│   ├── google-vm-instance-0/
-│   │   └── home.nix
 │   ├── m1-macbook-air/
 │   │   ├── darwin-configuration.nix
 │   │   └── home.nix
@@ -60,16 +58,6 @@ Use one of the following host names:
 sudo nix run nix-darwin -- switch --flake .#m1-macbook-air
 # or
 sudo nix run nix-darwin -- switch --flake .#m5-macbook-air
-```
-
-#### Debian/Linux (home-manager only)
-
-Use this host name:
-
-- `google-vm-instance-0`
-
-```console
-nix run home-manager -- switch --flake .#google-vm-instance-0
 ```
 
 ### 3. Update flake inputs (optional)
